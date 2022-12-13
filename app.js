@@ -16,9 +16,9 @@ btns.forEach(function (btn) {
             count--;
         }else if(styles.contains('increase')){
             count++;
-        }else[
-            
-        ]
+        }else{
+            count = 0;        
+        }
         value.textContent = count;
     });
 })
