@@ -1,5 +1,5 @@
 // Set initial count
-let count = 20;
+let count = 0;
 
 // Select value and buttons
 const value = document.querySelector('#value');
@@ -14,7 +14,11 @@ btns.forEach(function (btn) {
         const styles = e.currentTarget.classList;
         if((styles.contains('decrease')) && (count >= 1)){
             count--;
-        }
+        }else if(styles.contains('increase')){
+            count++;
+        }else[
+            
+        ]
         value.textContent = count;
     });
 })
